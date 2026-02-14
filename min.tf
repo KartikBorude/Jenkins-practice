@@ -1,12 +1,12 @@
 provider "aws" {
     region = "ap-southeast-2"
 }
-resource "aws_instance" "new" {
+resource "aws_instance" "kartik" {
     ami = "ami-0ba8d27d35e9915fb"
     instance_type = "t3.micro"
     
 
     tags = {
-        Name = "new"
+        Name = "kartik"
     }
 }
