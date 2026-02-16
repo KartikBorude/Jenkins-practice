@@ -2,9 +2,6 @@ provider "aws" {
   region = "ap-southeast-2"
 }
 
-# ----------------------------
-# Launch Template
-# ----------------------------
 resource "aws_launch_template" "lt-home" {
   name_prefix   = "lt-home"
   image_id      = "ami-0ba8d27d35e9915fb"   # change if needed
