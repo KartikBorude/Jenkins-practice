@@ -8,8 +8,8 @@ provider "aws" {
 resource "aws_launch_template" "lt-home" {
   name_prefix   = "lt-home"
   image_id      = "ami-0ba8d27d35e9915fb"   # change if needed
-  instance_type = "t2.micro"
-  key_name      = "your-key-name"          # change
+  instance_type = "t3.micro"
+  key_name      = "k8s"          # change
 
   network_interfaces {
     associate_public_ip_address = true
