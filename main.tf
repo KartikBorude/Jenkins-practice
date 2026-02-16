@@ -25,7 +25,7 @@ resource "aws_launch_template" "lt-home" {
 
 # ----------------------------
 # Target Group
-# ----------------------------
+
 resource "aws_lb_target_group" "home-tg" {
   name        = "home-tg"
   port        = 80
