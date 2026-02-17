@@ -2,11 +2,10 @@ provider "aws" {
   region = "ap-southeast-2"
 }
 
-resource "aws_instance" "kartik" {
-  ami           = "ami-0ba8d27d35e9915fb"
-  instance_type = "t3.micro"
+resource "aws_vpc" "kartik_vpc" {
+  cidr_block = "10.0.0.0/16"
 
   tags = {
-    Name = "Kartik"
-   }
+    Name = "kartik-vpc"
+  }
 }
