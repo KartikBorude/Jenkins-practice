@@ -7,5 +7,4 @@ resources "aws_instance" "Kartik" {
       tags = {
         Name = "Kartik"
       }
-
 }
