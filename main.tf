@@ -1,3 +1,6 @@
+provider "aws" {
+    region = "ap-southeast-2"
+}
 data "aws_vpc" "defaults" {
     default = true
 }
@@ -9,7 +12,7 @@ data "aws_subnets" "defaults" {
     }
 }
 
-# EKS Cluster IAM Role (missing tha)
+
 resource "aws_iam_role" "eks_cluster_role" {
     name = "eks-cluster-role"
 
